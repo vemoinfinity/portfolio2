@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const FooterMenu = () => {
   return (
-    <Navbar className='bg-secondary mt-5'>           
+    <Navbar className='scale-up-vertical-bottom bg-secondary mt-5'>           
             <Row className=' ms-4 my-3 text-dark'>
               <Col >
               <Row>

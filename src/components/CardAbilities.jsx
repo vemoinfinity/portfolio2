@@ -12,7 +12,7 @@ const CardAbilities = () => {
   return (
     
       <Card className='justify-content-lg-center'>
-            <h1 className='m-auto my-5 '>Abilities</h1>
+            <h1 className='blur-in-expand m-auto my-5 '>Abilities</h1>
             <Row className='mx-4'>
               <BaseCard imag={reactimg} titlecard={'React JS'}/>
               <BaseCard imag={htmlimg} titlecard={'Html 5'}/>   

@@ -8,7 +8,7 @@ import Lumini from '../picturs/lumini.png';
 const Portfolio = () => {
   return (
     <Card className='justify-content-center' >
-        <h1 className='m-auto my-5'>Portfolio</h1>
+        <h1 className='blur-in-expand m-auto my-5'>Portfolio</h1>
           <CardGroup>
             <CardHref url={'https://polite-maamoul-8f220e.netlify.app/'} imag={ecommerce} titlecard={'E-Commerce'}/> 
             <CardHref url={'https://adorable-sundae-c494df.netlify.app/'} imag={rick} titlecard={'Rick And Morthy'}/>

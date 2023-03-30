@@ -5,7 +5,7 @@ const Description = () => {
   return (
     <Row className='justify-content-lg-center my-3' variante='fluid'>
       <Col lg={8} sm={6} >
-      <div className="card border-secondary mb-3 cardtext" style={{ maxwidth: '20rem' }}>
+      <div className="scale-up-horizontal-left card border-secondary mb-3 cardtext" style={{ maxwidth: '20rem' }}>
           <div className="card-body">
             <h2 className="card-title">About Me</h2>
             <h5 className='text-secondary' >
@@ -18,7 +18,7 @@ const Description = () => {
         </div>       
       </Col>
       <Col sm={6} lg={4} >
-        <Card className='border-0 rounded-circle'>
+        <Card className='scale-up-horizontal-right border-0 rounded-circle'>
       <Image src={image} />
         </Card>
       </Col>

@@ -28,25 +28,25 @@ showResult(false);
 
   return (
     <Container >
-          <Card className='m-auto' style={{ width: '500px'}}> 
-            <h1 className='u m-5 '>Contact Me</h1>                    
+          <Card className='bounce-top m-auto' style={{ width: '500px'}}> 
+            <h1 className=' blur-in-expand u m-5 '>Contact Me</h1>                    
                 <Form  ref={form} onSubmit={sendEmail}>
-                  <Form.Group className='my-3' controlId="fullName">
+                  <Form.Group className='scale-up-horizontal-left my-3' controlId="fullName">
                     <Form.Label>Full name</Form.Label>
                     <Form.Control name='fullName' size='md' type="text"
                       placeholder="Full name" />
                   </Form.Group>
-                  <Form.Group className='my-3'  controlId="email">
+                  <Form.Group className='scale-up-horizontal-right my-3'  controlId="email">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control name='email' size='md' type="email"
                       placeholder="Enter Email" />
                   </Form.Group>
-                  <Form.Group className='my-3'  controlId="subject">
+                  <Form.Group className='scale-up-vertical-top my-3'  controlId="subject">
                     <Form.Label>Subject</Form.Label>
                     <Form.Control name='subject' size='md' type="text"
                       placeholder="Subject" />
                   </Form.Group>
-                  <Form.Group className='my-3'  controlId="message">
+                  <Form.Group className='scale-up-vertical-bottom my-3'  controlId="message">
                     <Form.Label>Message</Form.Label>
                     <Form.Control name='message' size='md' as="textarea" rows={4}/>
                   </Form.Group>
