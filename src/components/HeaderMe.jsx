@@ -7,7 +7,7 @@ const HeaderMe = () => {
     <Row className='justify-content-lg-center my-4' variante='fluid'>
     <Col sm={5} lg={3} >
     <Card className=" scale-up-horizontal-left rounded-circle border-secondary mb-3">
-      <Image className='rounded-circle' src={image} />
+      <Image className='rounded-circle' src={image} alt='myphoto' />
     </Card>
     </Col>
     <Col xl={8}>
