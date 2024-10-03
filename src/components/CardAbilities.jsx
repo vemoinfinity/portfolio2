@@ -7,6 +7,8 @@ import javascript from '../picturs/js2-logo.svg';
 import git from '../picturs/git-icon.svg';
 import github from '../picturs/github.png';
 import bootstrap from '../picturs/Bootstrap_logo.svg.png'; 
+import tailwind from '../picturs/Taicon.png'
+import vue  from '../picturs/Vue.png'
 import BaseCard from './BaseCard';
 const CardAbilities = () => {
   return (
@@ -20,7 +22,9 @@ const CardAbilities = () => {
               <BaseCard imag={cssimg} titlecard={'Css 3'}/>
               <BaseCard imag={git} titlecard={'Git'}/>
               <BaseCard imag={github} titlecard={'Github'}/> 
-              <BaseCard imag={bootstrap} titlecard={'BootStrap'}/>                                                                       
+              <BaseCard imag={bootstrap} titlecard={'BootStrap'}/>  
+              <BaseCard imag={tailwind} titlecard={'Tailwind CSS'}/>  
+              <BaseCard imag={vue} titlecard={'Vue JS'}/>                                                                     
             </Row>
           </Card>
   );
