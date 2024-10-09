@@ -3,9 +3,7 @@ import CardAbilities from '../components/CardAbilities';
 
 const Abilities = () => {
   return (
-    <div>
-      <CardAbilities/>
-    </div>
+      <CardAbilities/> 
   );
 };
 

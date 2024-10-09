@@ -1,39 +1,35 @@
 import React from 'react';
-import { Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Github, Linkedin, Mail} from "lucide-react"
 const FooterMenu = () => {
   return (
-    <Navbar className='scale-up-vertical-bottom bg-secondary mt-5 '>           
-            <Row className=' ms-4 my-3 text-dark'>
-              <Col >
-              <Row >
-                <h4 className="text-white">Information</h4>
-                <h7> Front-End Developer</h7> <br/>
-                <h7> Omar Elias Vera Macias</h7><br/>
-                <h7> Manta,Manabi,Ecuador</h7><br/>
-                <h7><p>veraomar50@gmail.com</p></h7>
-              </Row>
-              </Col>
-              <Col >
-              <Row >
-               <Nav.Link><h4 className="text-white" >Redes</h4></Nav.Link> 
-                <Nav.Link href='https://www.linkedin.com/in/omar-vera-a74b71249/'>Linkedin</Nav.Link>
-                <Nav.Link href='https://github.com/vemoinfinity'>Github</Nav.Link>
-                <Nav.Link href='https://drive.google.com/file/d/1smdOFKLo3qvz1lFHFdbK_nA7K6wpBm_6/view?usp=sharing'>Download My CV</Nav.Link>
-              </Row>
-              </Col>
-              <Col>
-              <Row >                
-                <Nav.Link to="/" as={Link}><h4 className="text-white">Menu</h4></Nav.Link>
-                <Nav.Link  to="/abilities" as={Link}>Abilities</Nav.Link>
-                <Nav.Link  to="/portfolio" as={Link}>Portfolio</Nav.Link>
-                <Nav.Link  to="/contactme" as={Link}>Contact Me</Nav.Link>
-              </Row>
-              </Col>
-            </Row>         
-    </Navbar>
-
+    <footer className="py-2 bg-black ">
+          <Card className='bg-transparent border-none' >
+            <CardContent className="flex mx-auto container justify-center p-6 gap-7">          
+                
+                  <Button variant="outline" size="icon" asChild className="text-indigo-600 border-indigo-600 hover:bg-indigo-100 dark:text-indigo-400 dark:border-indigo-400 dark:hover:bg-indigo-950">
+                    <a href="https://www.linkedin.com/in/omar-vera-a74b71249/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                      <Linkedin className="h-4 w-4" />
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="icon" asChild className="text-indigo-600 border-indigo-600 hover:bg-indigo-100 dark:text-indigo-400 dark:border-indigo-400 dark:hover:bg-indigo-950">
+                    <a href="https://github.com/vemoinfinity" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                      <Github className="h-4 w-4" />
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="icon" asChild className="text-indigo-600 border-indigo-600 hover:bg-indigo-100 dark:text-indigo-400 dark:border-indigo-400 dark:hover:bg-indigo-950">
+                    <a href="mailto:veraomar50@gmail.com" aria-label="Email">
+                      <Mail className="h-4 w-4" />
+                    </a>
+                  </Button>              
+            </CardContent>
+          </Card>
+        
+    <div className="container mx-auto px-4 text-center text-gray-200 dark:text-gray-400">
+      <p>&copy; 2024 Omar Vera. Todos los derechos reservados.</p>
+    </div>
+  </footer>
   );
 };
 
