@@ -1,9 +1,6 @@
-
 import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import FooterMenu from "./components/FooterMenu";
-
-import Navigator from "./components/Navigator";
+import Layout from "./components/Layout";
 import Abilities from "./pages/Abilities";
 import ContactMe from "./pages/ContactMe";
 import Home from "./pages/Home";
@@ -12,7 +9,7 @@ import { useEffect, useState } from "react";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
 import { LanguageProvider } from "./contexts/LanguageContext";
-function App() { 
+function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -30,16 +27,14 @@ function App() {
     <I18nextProvider i18n={i18n}>
       <LanguageProvider>
         <HashRouter>
-          <Navigator darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-          <div className="pt-5 bg-gradient-to-r from-sky-300 via-sky-500 dark:to-blue-800 ">
+          <Layout darkMode={darkMode} toggleDarkMode={toggleDarkMode}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/abilities" element={<Abilities />} />
               <Route path="/contactme" element={<ContactMe />} />
               <Route path="/portfolio" element={<Portfolio />} />
             </Routes>
-          </div>
-          <FooterMenu />
+          </Layout>
         </HashRouter>
       </LanguageProvider>
     </I18nextProvider>

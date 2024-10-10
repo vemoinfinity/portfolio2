@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const FooterMenu = () => {
   const {t}= useTranslation()
   return (
-    <footer className="py-2 bg-black ">
+    <footer className="py-2 bg-black mt-auto">
           <Card className='bg-transparent border-none' >
             <CardContent className="flex mx-auto container justify-center p-6 gap-7">          
                 
