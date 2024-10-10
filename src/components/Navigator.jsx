@@ -4,8 +4,11 @@ import { Button } from "@/components/ui/button"
 import { Moon, Sun } from "lucide-react"
 
 import logo from '../picturs/logo_transparent.png';
+import LanguageToggle from './LanguageToggle.jsx';
+import { useTranslation } from 'react-i18next';
 
 const Navigator = ({ darkMode, toggleDarkMode }) => {
+  const {t}= useTranslation()
   return (
     <header className="sticky top-0 z-10 bg-black/80 dark:bg-white/80 backdrop-blur-sm shadow-sm">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -14,17 +17,18 @@ const Navigator = ({ darkMode, toggleDarkMode }) => {
         </Link>
         <div className="flex items-center gap-4">
           <Button variant="ghost" asChild className="text-gray-200 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white bg-sky-600 hover:bg-sky-700 dark:bg-indigo-500 dark:hover:bg-indigo-600">
-            <Link to="/abilities">Abilities</Link>
+            <Link to="/abilities">{t('Abilities')}</Link>
           </Button>
           <Button variant="ghost" asChild className="text-gray-200 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white bg-sky-600 hover:bg-sky-700 dark:bg-indigo-500 dark:hover:bg-indigo-600">
-            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/portfolio"> {t('Portfolio')}</Link>
           </Button>
           <Button variant="ghost" asChild className="text-gray-200 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white bg-sky-600 hover:bg-sky-700 dark:bg-indigo-500 dark:hover:bg-indigo-600">
-            <Link to="/contactme">Contact</Link>
+            <Link to="/contactme">{t('Contact')}</Link>
           </Button>
           <Button variant="outline" size="icon" onClick={toggleDarkMode}>
             {darkMode ? <Sun className="h-[1.2rem] w-[1.2rem]" /> : <Moon className="h-[1.2rem] w-[1.2rem]" />}
           </Button>
+          <LanguageToggle/>
         </div>
       </nav>
     </header>

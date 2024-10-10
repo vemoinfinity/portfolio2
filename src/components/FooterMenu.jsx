@@ -2,7 +2,9 @@ import React from 'react';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Github, Linkedin, Mail} from "lucide-react"
+import { useTranslation } from 'react-i18next';
 const FooterMenu = () => {
+  const {t}= useTranslation()
   return (
     <footer className="py-2 bg-black ">
           <Card className='bg-transparent border-none' >
@@ -27,7 +29,7 @@ const FooterMenu = () => {
           </Card>
         
     <div className="container mx-auto px-4 text-center text-gray-200 dark:text-gray-400">
-      <p>&copy; 2024 Omar Vera. Todos los derechos reservados.</p>
+      <p>&copy;2024 Omar Vera {t('All rights reserved')}</p>
     </div>
   </footer>
   );
