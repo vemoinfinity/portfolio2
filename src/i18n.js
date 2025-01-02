@@ -28,6 +28,7 @@ const resources = {
           "Subject": "Subject",
           "Message": "Message",
           "Send": "Send",
+          "Manteños Gym: Gym Management Web App (2023)\n\nDeveloped a full-stack web application using React 18, Next.js 13 (App Router), and Firebase. Key features:\n- Modern, responsive UI with Tailwind CSS and shadcn/ui\n- User authentication and real-time database with Firebase\n- Membership management and class booking system\n- Admin panel for user and service control\n\nDemonstrated skills in full-stack development, UI/UX design, and modern web app architecture with a focus on performance and scalability.":"Manteños Gym: Gym Management Web App (2023)\n\nDeveloped a full-stack web application using React 18, Next.js 13 (App Router), and Firebase. Key features:\n- Modern, responsive UI with Tailwind CSS and shadcn/ui\n- User authentication and real-time database with Firebase\n- Membership management and class booking system\n- Admin panel for user and service control\n\nDemonstrated skills in full-stack development, UI/UX design, and modern web app architecture with a focus on performance and scalability.",
     }
   },
   es: {
@@ -55,7 +56,7 @@ const resources = {
       "Subject": "Asunto",
       "Message": "Mensaje",
       "Send": "Enviar",
-
+      "Manteños Gym: Gym Management Web App (2023)\n\nDeveloped a full-stack web application using React 18, Next.js 13 (App Router), and Firebase. Key features:\n- Modern, responsive UI with Tailwind CSS and shadcn/ui\n- User authentication and real-time database with Firebase\n- Membership management and class booking system\n- Admin panel for user and service control\n\nDemonstrated skills in full-stack development, UI/UX design, and modern web app architecture with a focus on performance and scalability.":"Manteños Gym: Aplicación web de gestión de gimnasios (2023)\n\nDesarrollé una aplicación web full-stack usando React 18, Next.js 13 (App Router) y Firebase. Características clave:\n- UI moderna y receptiva con Tailwind CSS y shadcn/ui\n- Autenticación de usuario y base de datos en tiempo real con Firebase\n- Gestión de membresías y sistema de reserva de clases\n- Panel de administración para control de usuarios y servicios\n \nHabilidades demostradas en desarrollo completo, diseño UI/UX y arquitectura de aplicaciones web modernas con un enfoque en el rendimiento y la escalabilidad.",
     }
   }
 };
